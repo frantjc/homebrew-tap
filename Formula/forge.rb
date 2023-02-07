@@ -5,12 +5,12 @@
 class Forge < Formula
   desc "Easily run reusable steps from proprietary CI systems"
   homepage "https://github.com/frantjc/forge"
-  version "0.4.1"
+  version "0.4.2"
   license "MIT"
 
   on_macos do
-    url "https://github.com/frantjc/forge/releases/download/v0.4.1/forge_0.4.1_darwin_amd64.tar.gz"
-    sha256 "343ee424e5d6ae1b937e89d70cc5c697070b44ea03dac6289f8fb5ce14768ac1"
+    url "https://github.com/frantjc/forge/releases/download/v0.4.2/forge_0.4.2_darwin_amd64.tar.gz"
+    sha256 "995ac09d36097b2ea216cc3436706d58d73f42e4c8080b7c500a7c6e27f75053"
 
     def install
       bin.install "forge"
@@ -29,8 +29,8 @@ class Forge < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/frantjc/forge/releases/download/v0.4.1/forge_0.4.1_linux_amd64.tar.gz"
-      sha256 "a0953188f8ccf45322ec821ca4b110254645e0bffee929b70bd38bdbb05aef1d"
+      url "https://github.com/frantjc/forge/releases/download/v0.4.2/forge_0.4.2_linux_amd64.tar.gz"
+      sha256 "a9eaee26152c78c5be8f43ca1f6198b0181fb630f4876488b70786af4d9ba78d"
 
       def install
         bin.install "forge"
