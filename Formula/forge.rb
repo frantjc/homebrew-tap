@@ -10,7 +10,7 @@ class Forge < Formula
 
   on_macos do
     url "https://github.com/frantjc/forge/releases/download/v0.7.2/forge_0.7.2_darwin_amd64.tar.gz"
-    sha256 "032ae1a836395eb8a17c5793b8ce2ab0b32c724b251e5a682e36e10ed4d3e68c"
+    sha256 "32aee3106c8b23b4e8761512eaa91079de07d4a8a2a64aef4ecf0b1380837b31"
 
     def install
       bin.install "forge"
@@ -30,7 +30,7 @@ class Forge < Formula
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/frantjc/forge/releases/download/v0.7.2/forge_0.7.2_linux_amd64.tar.gz"
-      sha256 "3a1852d9b1874e1df9d4d8b92650b31258b4013e50e4ded044dcdb931f1c7781"
+      sha256 "a482c517551fe5d60e6da09c611ca70eafca005909d11d0b7c0878591fa5c520"
 
       def install
         bin.install "forge"
