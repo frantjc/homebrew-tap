@@ -5,12 +5,12 @@
 class Kontrol < Formula
   desc "Package and deploy Kubernetes controllers"
   homepage "https://github.com/frantjc/kontrol"
-  version "0.1.4"
+  version "0.1.5"
   license "MIT"
 
   on_macos do
-    url "https://github.com/frantjc/kontrol/releases/download/v0.1.4/kontrol_0.1.4_darwin_amd64.tar.gz"
-    sha256 "4f45b8f4cb2de20f5d06faff21b7561c53c27850fe086cb234e7ee20915783bb"
+    url "https://github.com/frantjc/kontrol/releases/download/v0.1.5/kontrol_0.1.5_darwin_amd64.tar.gz"
+    sha256 "50ded38993c2671b5387546a7ef6cbff726dadf8fda42079574c610f34505848"
 
     def install
       bin.install "kontrol"
@@ -29,8 +29,8 @@ class Kontrol < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/frantjc/kontrol/releases/download/v0.1.4/kontrol_0.1.4_linux_amd64.tar.gz"
-      sha256 "103ff41d75bb3eb30b1b75042fa08e961cb641343e3b04b230815d5749f51a16"
+      url "https://github.com/frantjc/kontrol/releases/download/v0.1.5/kontrol_0.1.5_linux_amd64.tar.gz"
+      sha256 "0dd5f280badc6ff3d7bf8057f6856b2d0bf4023a5781f338776e2827411f9c8b"
 
       def install
         bin.install "kontrol"
