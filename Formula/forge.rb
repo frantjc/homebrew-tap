@@ -5,32 +5,40 @@
 class Forge < Formula
   desc "Easily run reusable steps from proprietary CI systems"
   homepage "https://github.com/frantjc/forge"
-  version "0.7.6"
+  version "0.8.0"
   license "MIT"
 
   on_macos do
-    url "https://github.com/frantjc/forge/releases/download/v0.7.6/forge_0.7.6_darwin_amd64.tar.gz"
-    sha256 "838b5627f852910992dd955d7ca687ee0a8ce8700032a8fae511397a1771eb37"
-
-    def install
-      bin.install "forge"
-    end
-
     if Hardware::CPU.arm?
-      def caveats
-        <<~EOS
-          The darwin_arm64 architecture is not supported for the Forge
-          formula at this time. The darwin_amd64 binary may work in compatibility
-          mode, but it might not be fully supported.
-        EOS
+      url "https://github.com/frantjc/forge/releases/download/v0.8.0/forge_0.8.0_darwin_arm64.tar.gz"
+      sha256 "9c2fdc8ae419ecc74727a2ca8f1538d3524697ba868e064e6cd28e9bc7843d1b"
+
+      def install
+        bin.install "forge"
+      end
+    end
+    if Hardware::CPU.intel?
+      url "https://github.com/frantjc/forge/releases/download/v0.8.0/forge_0.8.0_darwin_amd64.tar.gz"
+      sha256 "6ded4f9c6f3f22ad1fc3b308d654f7352a3e0edf03808df2923e976b9d6e1e8f"
+
+      def install
+        bin.install "forge"
       end
     end
   end
 
   on_linux do
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/frantjc/forge/releases/download/v0.8.0/forge_0.8.0_linux_arm64.tar.gz"
+      sha256 "7de4ab6af2f6d76d4ff36793ede5256fe1b15f1e003cd6d2f381b42c0c338941"
+
+      def install
+        bin.install "forge"
+      end
+    end
     if Hardware::CPU.intel?
-      url "https://github.com/frantjc/forge/releases/download/v0.7.6/forge_0.7.6_linux_amd64.tar.gz"
-      sha256 "18657cfe324a74c9c1d58dc20e663fa0eb804d8eebab6c62e086dc7c582eb7b2"
+      url "https://github.com/frantjc/forge/releases/download/v0.8.0/forge_0.8.0_linux_amd64.tar.gz"
+      sha256 "188a3ad31dd2a77a9d65f16caad8586e620a1d2adbd2fc90913ab4e34ee5ed2d"
 
       def install
         bin.install "forge"
