@@ -5,21 +5,21 @@
 class Forge < Formula
   desc "Easily run reusable steps from proprietary CI systems"
   homepage "https://github.com/frantjc/forge"
-  version "0.9.0"
+  version "0.9.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/frantjc/forge/releases/download/v0.9.0/forge_0.9.0_darwin_arm64.tar.gz"
-      sha256 "072c2f433da83ea6f3cd79c8f252a122156ece04f9c9b653a12d632bc0d0e1f2"
+      url "https://github.com/frantjc/forge/releases/download/v0.9.1/forge_0.9.1_darwin_arm64.tar.gz"
+      sha256 "b47109542204d87535ffb873d0901e91ae6272aab4f727bb6fc20410c52c79fb"
 
       def install
         bin.install "forge"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/frantjc/forge/releases/download/v0.9.0/forge_0.9.0_darwin_amd64.tar.gz"
-      sha256 "9be39ee1a29ab51d09bfe19643a0b8fe4171f74f0232d690da308e8df1512c0b"
+      url "https://github.com/frantjc/forge/releases/download/v0.9.1/forge_0.9.1_darwin_amd64.tar.gz"
+      sha256 "fc1ebe281c46894f9733636681c1751a1fb76315a69bd7053e12f9b020aa75c9"
 
       def install
         bin.install "forge"
@@ -29,16 +29,16 @@ class Forge < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/frantjc/forge/releases/download/v0.9.0/forge_0.9.0_linux_arm64.tar.gz"
-      sha256 "6dd7058dbc726b706956d1e98a2ae5dd9fd6284aa8814b7d3f9871e660fe6fd8"
+      url "https://github.com/frantjc/forge/releases/download/v0.9.1/forge_0.9.1_linux_arm64.tar.gz"
+      sha256 "0bcecfd39d3243c78eed9fb4f2cd54f111c85751a1a6b750b9cc5df937041403"
 
       def install
         bin.install "forge"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/frantjc/forge/releases/download/v0.9.0/forge_0.9.0_linux_amd64.tar.gz"
-      sha256 "0107803bf6b65a4e0d875ffb5e889f4eade1319f3a5c0319626684fc5154a4d0"
+      url "https://github.com/frantjc/forge/releases/download/v0.9.1/forge_0.9.1_linux_amd64.tar.gz"
+      sha256 "30852da96e219ca6c0851f62a0b36ed28c81f79de7e6a410e7b4626985066fac"
 
       def install
         bin.install "forge"
