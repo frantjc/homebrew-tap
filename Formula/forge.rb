@@ -9,17 +9,17 @@ class Forge < Formula
   license "MIT"
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://github.com/frantjc/forge/releases/download/v0.13.3/forge_0.13.3_darwin_amd64.tar.gz"
-      sha256 "c472c242e317b1f56a44802d7c061ca5584177f0eab0a26a0913a3d3d2bfecca"
+    if Hardware::CPU.arm?
+      url "https://github.com/frantjc/forge/releases/download/v0.13.3/forge_0.13.3_darwin_arm64.tar.gz"
+      sha256 "0dc457ec43ec4e5d2812c25dff5c77fc91f687edba49967575c24627a1538907"
 
       def install
         bin.install "forge"
       end
     end
-    if Hardware::CPU.arm?
-      url "https://github.com/frantjc/forge/releases/download/v0.13.3/forge_0.13.3_darwin_arm64.tar.gz"
-      sha256 "3e134ec61414b98df25ee727caa013d51e9edebc126191de7bab5ae940e47cb4"
+    if Hardware::CPU.intel?
+      url "https://github.com/frantjc/forge/releases/download/v0.13.3/forge_0.13.3_darwin_amd64.tar.gz"
+      sha256 "bda8ce65cd7852c2f2c0eeae3afaf493fd3d306151a3362456047b25e834d70a"
 
       def install
         bin.install "forge"
@@ -28,17 +28,17 @@ class Forge < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      url "https://github.com/frantjc/forge/releases/download/v0.13.3/forge_0.13.3_linux_amd64.tar.gz"
-      sha256 "b6440e1d8486411250ca5b063c8911371712682f1b02ad25acb2dfb648ef4569"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/frantjc/forge/releases/download/v0.13.3/forge_0.13.3_linux_arm64.tar.gz"
+      sha256 "542f4cec0526df0856d133e6ad598e4ff5f9a6efc07affe3b2fbeb3f31e4a52b"
 
       def install
         bin.install "forge"
       end
     end
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/frantjc/forge/releases/download/v0.13.3/forge_0.13.3_linux_arm64.tar.gz"
-      sha256 "ceff884680492a6d9183d192ba65fb8ae9c63c59486189ef687731b9fead4031"
+    if Hardware::CPU.intel?
+      url "https://github.com/frantjc/forge/releases/download/v0.13.3/forge_0.13.3_linux_amd64.tar.gz"
+      sha256 "cf795c783d7c7d532e9302b5d43199fce5dea1a43156ec3d7ffca603a5761246"
 
       def install
         bin.install "forge"
