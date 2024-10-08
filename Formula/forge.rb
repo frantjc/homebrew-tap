@@ -11,7 +11,7 @@ class Forge < Formula
   on_macos do
     on_intel do
       url "https://github.com/frantjc/forge/releases/download/v0.15.4/forge_0.15.4_darwin_amd64.tar.gz"
-      sha256 "da903b45047906c6cd4d5b0b2c578cff27935409e773d1b8af970adf3a185cae"
+      sha256 "48f323f42c637c93dbafc96d3be3bc2dd4adfa5d012ab15b92e44d0b52bd7efc"
 
       def install
         bin.install "forge"
@@ -19,7 +19,7 @@ class Forge < Formula
     end
     on_arm do
       url "https://github.com/frantjc/forge/releases/download/v0.15.4/forge_0.15.4_darwin_arm64.tar.gz"
-      sha256 "941e85cec7c524aec8848df141392979fb04c9c8539fa9517d5d255e09af262d"
+      sha256 "56dded88e810acfc4606868b4c025b0ebb37f8627aeb7e9ac5056c4b2a5810cd"
 
       def install
         bin.install "forge"
@@ -31,7 +31,7 @@ class Forge < Formula
     on_intel do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/frantjc/forge/releases/download/v0.15.4/forge_0.15.4_linux_amd64.tar.gz"
-        sha256 "c373fa65c736bfccf147f86bbdb2313f2d6ff55b25d3c3d4100cac03defd82b9"
+        sha256 "778e754ec9e28fb012283aa9cc25004171506b8027eae2432c50a6687b326c23"
 
         def install
           bin.install "forge"
@@ -41,7 +41,7 @@ class Forge < Formula
     on_arm do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/frantjc/forge/releases/download/v0.15.4/forge_0.15.4_linux_arm64.tar.gz"
-        sha256 "52c31564fd3cf7c0568d23f8c204adcde2bb203ed2b2b4b71dff2319c7cb8c81"
+        sha256 "456d120cf9618b377716e38b78155955be012753dc2a9b37bc40e834d726149f"
 
         def install
           bin.install "forge"
