@@ -11,7 +11,7 @@ class Rvglsm < Formula
 
   if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
     url "https://github.com/frantjc/rvgl-utils/releases/download/v0.1.0/rvgl-utils_0.1.0_linux_amd64.tar.gz"
-    sha256 "79fb35014dee4ae78224da459869bfdb0dfe01aefcc4b436477feebce73b60ba"
+    sha256 "17735659ec64fa4a1c3dd5fcc63dce4af612e5fa482dc432a089e25ec1f3984a"
     def install
       bin.install "rvglsm"
     end
