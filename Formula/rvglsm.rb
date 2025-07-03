@@ -5,13 +5,13 @@
 class Rvglsm < Formula
   desc ""
   homepage "https://github.com/frantjc/rvgl-utils"
-  version "0.1.1"
+  version "0.2.0"
   license "MIT"
   depends_on :linux
 
   if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-    url "https://github.com/frantjc/rvgl-utils/releases/download/v0.1.1/rvgl-utils_0.1.1_linux_amd64.tar.gz"
-    sha256 "debb8674f42ff99976c3ce590d78b45eb3bd560c85d91876a69680d0affbe0dc"
+    url "https://github.com/frantjc/rvgl-utils/releases/download/v0.2.0/rvglsm_0.2.0_linux_amd64"
+    sha256 "7cf227b14fb44244bd5be9a33cc96dca09bbf38d34bb83d91143416ef0f522ab"
     def install
       bin.install "rvglsm"
     end
