@@ -10,10 +10,26 @@ cask "rvglsm" do
 
   binary "rvglsm"
 
+  on_macos do
+    on_intel do
+      url "https://github.com/frantjc/rvgl-utils/releases/download/v0.4.0/rvgl-utils_0.4.0_darwin_amd64.tar.gz"
+      sha256 "b0289830bbac7ad6d880a14c35e7598da4f72f54000c59ecd036f0f187fa19dc"
+    end
+    on_arm do
+      def caveats
+        <<~EOS
+          The darwin_arm64 architecture is not supported for the rvglsm
+          formula at this time. The darwin_amd64 binary may work in compatibility
+          mode, but it might not be fully supported.
+        EOS
+      end
+    end
+  end
+
   on_linux do
     on_intel do
       url "https://github.com/frantjc/rvgl-utils/releases/download/v0.4.0/rvgl-utils_0.4.0_linux_amd64.tar.gz"
-      sha256 "d309735ea5337fdaf41b537ca75e73a773ce0c90376cd4624b2120838cffcaac"
+      sha256 "506daaab1452e131dd8080b70e28c13bd4e5dac44dea0b4a3e83fc95d1d1af78"
     end
   end
 
@@ -22,8 +38,10 @@ cask "rvglsm" do
     ]
 
   postflight do
-    if system_command("/usr/bin/xattr", args: ["-h"]).exit_status == 0
-      system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{staged_path}/rvglsm"]
+    if OS.mac?
+      if system_command("/usr/bin/xattr", args: ["-h"]).exit_status == 0
+        system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{staged_path}/rvglsm"]
+      end
     end
   end
 
