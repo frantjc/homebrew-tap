@@ -2,7 +2,7 @@
 cask "rvglsm" do
   desc ""
   homepage ""
-  version "0.3.0"
+  version "0.4.0"
 
   livecheck do
     skip "Auto-generated on release."
@@ -12,8 +12,8 @@ cask "rvglsm" do
 
   on_linux do
     on_intel do
-      url "https://github.com/frantjc/rvgl-utils/releases/download/v0.3.0/rvgl-utils_0.3.0_linux_amd64.tar.gz"
-      sha256 "a1f5f937642a68af29c943edf4ecb091427251f1aeca02161d078a3066910781"
+      url "https://github.com/frantjc/rvgl-utils/releases/download/v0.4.0/rvgl-utils_0.4.0_linux_amd64.tar.gz"
+      sha256 "d309735ea5337fdaf41b537ca75e73a773ce0c90376cd4624b2120838cffcaac"
     end
   end
 
