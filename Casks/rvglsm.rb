@@ -2,7 +2,7 @@
 cask "rvglsm" do
   desc ""
   homepage ""
-  version "0.4.0"
+  version "0.4.1"
 
   livecheck do
     skip "Auto-generated on release."
@@ -12,8 +12,8 @@ cask "rvglsm" do
 
   on_macos do
     on_intel do
-      url "https://github.com/frantjc/rvgl-utils/releases/download/v0.4.0/rvgl-utils_0.4.0_darwin_amd64.tar.gz"
-      sha256 "b0289830bbac7ad6d880a14c35e7598da4f72f54000c59ecd036f0f187fa19dc"
+      url "https://github.com/frantjc/rvgl-utils/releases/download/v0.4.1/rvgl-utils_0.4.1_darwin_amd64.tar.gz"
+      sha256 "5541d8817b9f3991508558970710b94dfd957a266c6afe1be4661b31f08c8fd4"
     end
     on_arm do
       def caveats
@@ -28,8 +28,8 @@ cask "rvglsm" do
 
   on_linux do
     on_intel do
-      url "https://github.com/frantjc/rvgl-utils/releases/download/v0.4.0/rvgl-utils_0.4.0_linux_amd64.tar.gz"
-      sha256 "506daaab1452e131dd8080b70e28c13bd4e5dac44dea0b4a3e83fc95d1d1af78"
+      url "https://github.com/frantjc/rvgl-utils/releases/download/v0.4.1/rvgl-utils_0.4.1_linux_amd64.tar.gz"
+      sha256 "c583b577089c695c57e741b5a5ed9974b70410d17f9470d4270778a57e4321f5"
     end
   end
 
