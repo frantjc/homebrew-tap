@@ -5,7 +5,7 @@
 class Rvglsm < Formula
   homepage "https://github.com/frantjc/rvgl-utils"
   version "0.2.1"
-  disable! date: "2025-07-07", because: "The Cask should now be used instead", replacement_cask: "rvglsm"
+  disable! date: "2025-07-07", because: "the Cask should now be used instead", replacement_cask: "rvglsm"
   license "MIT"
   depends_on :linux
 
