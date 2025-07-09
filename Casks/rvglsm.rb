@@ -2,7 +2,7 @@
 cask "rvglsm" do
   desc "Track RVGL session scores."
   homepage "https://github.com/frantjc/rvgl-utils"
-  version "0.4.2"
+  version "0.4.2-alpha0"
 
   livecheck do
     skip "Auto-generated on release."
@@ -12,8 +12,8 @@ cask "rvglsm" do
 
   on_macos do
     on_intel do
-      url "https://github.com/frantjc/rvgl-utils/releases/download/v0.4.2/rvgl-utils_0.4.2_darwin_amd64.tar.gz"
-      sha256 "ca40776d01137e06497fca7802a0bcc59c89bfdee5f28241e1851f1160ba1b88"
+      url "https://github.com/frantjc/rvgl-utils/releases/download/v0.4.2-alpha0/rvgl-utils_0.4.2-alpha0_darwin_amd64.tar.gz"
+      sha256 "58c46d59a72c1da6c6854c8b8e120809554d14211c120c9f8c1bd7a9ae911aae"
     end
     on_arm do
       def caveats
@@ -28,8 +28,8 @@ cask "rvglsm" do
 
   on_linux do
     on_intel do
-      url "https://github.com/frantjc/rvgl-utils/releases/download/v0.4.2/rvgl-utils_0.4.2_linux_amd64.tar.gz"
-      sha256 "f9d7c482208af2532c3bcf108611177109e72da45d4b35cd79e4e3ef2857431a"
+      url "https://github.com/frantjc/rvgl-utils/releases/download/v0.4.2-alpha0/rvgl-utils_0.4.2-alpha0_linux_amd64.tar.gz"
+      sha256 "80fc59dedf3a8e48bf1d438babe056bbe3020f3ed752ca64fefab073d10e1c25"
     end
   end
 
