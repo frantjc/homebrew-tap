@@ -5,7 +5,8 @@
 class Forge < Formula
   desc "Easily run reusable steps from proprietary CI systems."
   homepage "https://github.com/frantjc/forge"
-  version "1.0.1"
+  version "1.0.2"
+  disable! date: "2025-07-14", because: "the Cask should now be used instead", replacement_cask: "forge"
   license "MIT"
 
   on_macos do
