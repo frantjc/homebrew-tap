@@ -39,7 +39,7 @@ cask "forge" do
   postflight do
     if OS.mac?
       if system_command("/usr/bin/xattr", args: ["-h"]).exit_status == 0
-        system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{staged_path}/rvglsm"]
+        system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{staged_path}/forge"]
       end
     end
   end
