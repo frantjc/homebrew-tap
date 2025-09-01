@@ -33,10 +33,6 @@ cask "rvglsm" do
     end
   end
 
-  conflicts_with formula: [
-      "rvglsm",
-    ]
-
   postflight do
     if OS.mac?
       if system_command("/usr/bin/xattr", args: ["-h"]).exit_status == 0

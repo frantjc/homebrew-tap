@@ -32,10 +32,6 @@ cask "forge" do
     end
   end
 
-  conflicts_with formula: [
-      "forge",
-    ]
-
   postflight do
     if OS.mac?
       if system_command("/usr/bin/xattr", args: ["-h"]).exit_status == 0
