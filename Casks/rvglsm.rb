@@ -13,7 +13,7 @@ cask "rvglsm" do
   on_macos do
     on_intel do
       url "https://github.com/frantjc/rvgl-utils/releases/download/v0.6.0/rvgl-utils_0.6.0_darwin_amd64.tar.gz"
-      sha256 "097b9670158463eb66fc3e4ac09026ee3e7c3e873fbe744c5c6dfd77e679ff42"
+      sha256 "8352858e21460103e1b16d08e9b7da7fb12849ff42c33bcc608f0fcd571c6051"
     end
     on_arm do
       def caveats
@@ -29,7 +29,7 @@ cask "rvglsm" do
   on_linux do
     on_intel do
       url "https://github.com/frantjc/rvgl-utils/releases/download/v0.6.0/rvgl-utils_0.6.0_linux_amd64.tar.gz"
-      sha256 "ce234c8a9117ccd2b807bb11a3fae59867e6fc25fc7d65d7ef30354bacb0b034"
+      sha256 "63ec4c4ecc4035b09422affef88e9a747072f7b1dc5960d3f8d66fad642609a2"
     end
   end
 
