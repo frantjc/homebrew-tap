@@ -2,7 +2,7 @@
 cask "forge" do
   desc "Easily run reusable steps from proprietary CI systems."
   homepage "https://github.com/frantjc/forge"
-  version "1.0.2"
+  version "1.0.3"
 
   livecheck do
     skip "Auto-generated on release."
@@ -12,23 +12,23 @@ cask "forge" do
 
   on_macos do
     on_intel do
-      url "https://github.com/frantjc/forge/releases/download/v1.0.2/forge_1.0.2_darwin_amd64.tar.gz"
-      sha256 "8f31ffa69eafa8c6e8c4e1c614d86a278ea203adbe239c00d10cbebd701dbf14"
+      url "https://github.com/frantjc/forge/releases/download/v1.0.3/forge_1.0.3_darwin_amd64.tar.gz"
+      sha256 "5c9cdf0adb8c2a87e35cab9284e274b4bb73b921835adec51cbf7fd4fb8c4f66"
     end
     on_arm do
-      url "https://github.com/frantjc/forge/releases/download/v1.0.2/forge_1.0.2_darwin_arm64.tar.gz"
-      sha256 "1eaeaadec2f6f48cd8bdb3f5797224a17de62e6fd8b234a3d98efc86852ca97f"
+      url "https://github.com/frantjc/forge/releases/download/v1.0.3/forge_1.0.3_darwin_arm64.tar.gz"
+      sha256 "f61bafa1d285445f57f69dc153a73e4a617a73039e1e1a68ad5256a160f58dc6"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/frantjc/forge/releases/download/v1.0.2/forge_1.0.2_linux_amd64.tar.gz"
-      sha256 "52a1f992db2b980bec75c40232a09575990b988bc2b062c0ace588c2058befbc"
+      url "https://github.com/frantjc/forge/releases/download/v1.0.3/forge_1.0.3_linux_amd64.tar.gz"
+      sha256 "8fef589c9abf92ea079ba99286525b2e94322c9dbbe52a1e7ae14f63002c6d92"
     end
     on_arm do
-      url "https://github.com/frantjc/forge/releases/download/v1.0.2/forge_1.0.2_linux_arm64.tar.gz"
-      sha256 "673ea964465ad34edaba1d3119a2a0e283eb6d9e5a9efa159640fcb3445427ce"
+      url "https://github.com/frantjc/forge/releases/download/v1.0.3/forge_1.0.3_linux_arm64.tar.gz"
+      sha256 "5d4a153e1eb0c84553affe05fbf90a150b3fc85761aec9074d3c123e22c92302"
     end
   end
 
