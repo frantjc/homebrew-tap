@@ -6,21 +6,21 @@ cask "barge" do
   on_darwin do
     on_amd64 do
       url "https://github.com/frantjc/barge/releases/download/v0.1.2/barge-v0.1.2-darwin-amd64.tar.gz"
-      sha256 "19b83343f5c2243cb0180775ac351ae510d6ed989fd62ad7a09fea851c50b490"
+      sha256 "8dfe7fb8f7efbe982768abb13f49b54f2e67f83e5f4c9f453aa10641a1f01cb1"
     end
     on_arm64 do
       url "https://github.com/frantjc/barge/releases/download/v0.1.2/barge-v0.1.2-darwin-arm64.tar.gz"
-      sha256 "4c269375744e906e5201c36977f322bddc8ab3ab88e5d5536749800a955dd803"
+      sha256 "e2b0b2d86f7f7fcd3206c4d3a1ebcc74de30f5c0f179258b20c52f531e90972f"
     end
   end
   on_linux do
     on_amd64 do
       url "https://github.com/frantjc/barge/releases/download/v0.1.2/barge-v0.1.2-linux-amd64.tar.gz"
-      sha256 "2d97b946dd53f663dd87180f6a8f042770d37f2f87e8f0c7709955aac1c339e4"
+      sha256 "6fdb9a9465acd88d5e860a28c040caa6b8407e7f4cbc2c569077a0c0dbcd1ea7"
     end
     on_arm64 do
       url "https://github.com/frantjc/barge/releases/download/v0.1.2/barge-v0.1.2-linux-arm64.tar.gz"
-      sha256 "127d436725ebf7ceef036a53e78af92e587f9227637c423e548cb0c710da5d08"
+      sha256 "81f8ad2063792af0846ea132ef200fb7a841af1900f90617cca8a1b2e20ce243"
     end
   end
 
